@@ -4,6 +4,8 @@
 
 Made with my mentor at [Bloc](http://bloc.io)
 
+Known on Heroku as [elizabethpg-bloccit](elizabethpg-bloccit.herokuapp.com)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
