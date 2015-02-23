@@ -16,7 +16,15 @@ require 'faker'
      body: Faker::Lorem.paragraph
    )
  end
- 
+
+1.times do
+  Post.first_or_create!(title: "One time", body: "Testing 1 2 3")
+end
+
+1.times do
+  Comment.first_or_create!(post: posts, body: "Wow, that took forever to figure out.")
+end
+
  puts "Seed finished"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
