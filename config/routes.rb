@@ -1,8 +1,10 @@
+#Use the incoming request's path to determine a controller and action to process that request.
 Rails.application.routes.draw do
+  resources :posts
 
-   resources :posts
+  resources :advertisements
 
-   get 'about' => 'welcome#about'
+  get 'about' => 'welcome#about'
 
   root to: 'welcome#index'
 end

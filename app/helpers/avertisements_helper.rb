@@ -1,0 +1,2 @@
+module AvertisementsHelper
+end
