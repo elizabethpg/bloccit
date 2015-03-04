@@ -55,5 +55,8 @@ group :development, :test do
   gem 'spring'
 
   gem 'devise'
+
+  gem 'figaro', '1.0'
+  
 end
 
