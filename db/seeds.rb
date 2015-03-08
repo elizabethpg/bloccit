@@ -13,6 +13,14 @@ require 'faker'
 end
 users = User.all
 
+# Create Summaries
+50.times do
+  Summary.create!(
+    description: Faker::Lorem.paragraph
+    )
+end
+summaries = Summary.all
+
 # Create Topics
  15.times do
    Topic.create!(

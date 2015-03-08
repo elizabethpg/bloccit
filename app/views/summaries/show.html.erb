@@ -1,0 +1,6 @@
+<h1>Show Summary</h1>
+<p><%= @summary.description %></p>
+
+<% if policy(@summary).edit? %>
+  <%= link_to "Edit", edit_post_summary_path(@post, @summary), class: 'btn btn-success' %>
+<% end %>

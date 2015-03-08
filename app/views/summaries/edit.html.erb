@@ -1,0 +1,6 @@
+<%= form_for [@post, @summary] do |f| %>
+      <%= f.label :description %>
+      <%= f.text_area :description, class: 'form-control', placeholder: "Enter your summary" %>
+      <%= f.submit "Save", class: "btn btn-success" %>
+
+<% end %>
