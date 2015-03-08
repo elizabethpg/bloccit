@@ -1,7 +1,10 @@
 #Use the incoming request's path to determine a controller and action to process that request.
 Rails.application.routes.draw do
+
   devise_for :users
-  resources :posts
+  resources  :topics do
+    resources :posts, except: [:index]
+  end
 
   resources :advertisements
 
