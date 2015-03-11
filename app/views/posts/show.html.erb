@@ -4,7 +4,7 @@
   <div class="col-md-8">
       <small>
         <%= image_tag(@post.user.avatar.tiny.url) if @post.user.avatar? %>
-        submitted <%= time_ago_in_word(@post.created_at) %> ago by
+        submitted <%= time_ago_in_words(@post.created_at) %> ago by
         <%= @post.user.name %>
     <p><%= @post.markdown_body %></p>
   </div>
