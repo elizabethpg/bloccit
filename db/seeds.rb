@@ -1,5 +1,13 @@
 require 'faker'
 
+# Create Comments
+ 200.times do
+   Comment.create!(
+     body:  Faker::Lorem.paragraph
+   )
+ end
+ comments = Comment.all
+
 # Create Users
 5.times do
   user = User.new(
