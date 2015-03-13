@@ -1,0 +1,10 @@
+<h1><%= "Comments" %></h1>
+
+<%= @comment.user.name if @comment.user %>
+<div class="row">
+  <div class="col-md-8">
+      <small>
+        <%= @comment.user.name %> submitted <%= time_ago_in_words(@comment.created_at) %>
+    <p><%= @comment.body %></p>
+  </div>
+</div>
