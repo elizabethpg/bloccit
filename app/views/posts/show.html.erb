@@ -14,9 +14,10 @@
     <% end %>
   </div>
     <div>
+      <% if policy(@comments).create? %>
         <%= render partial: 'comments/form', locals: {topic: @topic, post: @post, comment: @comment} %>
     </div>
 <h2><%= @comments.count %> Comments</h2>
   <%= render @comments %>
-
+<% end %>
   </div>
