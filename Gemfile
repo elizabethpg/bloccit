@@ -13,6 +13,10 @@ gem 'rails', '4.2.0'
    gem 'better_errors'
  end
 
+ group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
+
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
