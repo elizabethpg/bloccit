@@ -23,4 +23,11 @@ class User < ActiveRecord::Base
   def favorited(post)
     favorites.where(post_id: post.id).first
   end
+
+# takes a post object and returns a voted object if one exists 
+# in the votes table with the appropirate user_id and post_id
+# if there is none the method will return nil
+  def voted(post) 
+    votes.where(post_id: post.id).first
+  end
 end
