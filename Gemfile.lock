@@ -83,6 +83,8 @@ GEM
     erubis (2.7.0)
     excon (0.44.4)
     execjs (2.4.0)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
     faker (1.4.3)
       i18n (~> 0.5)
     figaro (1.0.0)
@@ -202,6 +204,8 @@ GEM
     pg (0.18.1)
     pundit (0.3.0)
       activesupport (>= 3.0.0)
+    quiet_assets (1.1.0)
+      railties (>= 3.1, < 5.0)
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -303,6 +307,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.1.0)
   devise
+  factory_girl
   faker
   figaro (= 1.0)
   fog
@@ -311,6 +316,7 @@ DEPENDENCIES
   mini_magick
   pg
   pundit
+  quiet_assets
   rails (= 4.2.0)
   rails_12factor
   redcarpet

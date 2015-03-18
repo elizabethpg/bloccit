@@ -11,4 +11,4 @@ require 'rails_helper'
      xit "returns the appropriate favorite if it exists" do
      end
    end
- end
+end

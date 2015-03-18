@@ -11,11 +11,13 @@ gem 'rails', '4.2.0'
    gem 'sqlite3'
    gem 'binding_of_caller'
    gem 'better_errors'
+   gem 'quiet_assets'
  end
 
  group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
+  gem 'factory_girl'
 end
 
 gem 'sass-rails', '~> 5.0'
