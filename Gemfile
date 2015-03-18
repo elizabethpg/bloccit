@@ -5,12 +5,14 @@ gem 'rails', '4.2.0'
  group :production do
    gem 'pg'
    gem 'rails_12factor'
+   gem 'puma'
  end
 
  group :development do
    gem 'sqlite3'
    gem 'binding_of_caller'
    gem 'better_errors'
+   gem 'thin'
  end
 
  group :development, :test do
@@ -49,3 +51,4 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'will_paginate', '~> 3.0.6'
+gem 'newrelic_rpm'
