@@ -13,9 +13,11 @@ gem 'rails', '4.2.0'
    gem 'better_errors'
  end
 
- group :development, :test do
+ group :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 gem 'sass-rails', '~> 5.0'
