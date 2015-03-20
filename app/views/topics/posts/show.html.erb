@@ -26,10 +26,11 @@
         <%= render partial: 'favorites/favorite', locals: { post: @post } %>
   </div>
 
-    <div>
-        <%= render partial: 'comments/form', locals: { post: @post, comment: @comment} %>
-    </div>
-<h2 class="js-comments-count"><%= @comments.count %> Comments</h2>
-  <%= render partial: 'comments/comment', collection: @comments %>
-
+  <h2>Comments</h2>
+    <div class='js-comments'>
+    <%= render partial: 'comments/comment', collection: @comments %>
+ </div>
+  <div class='new-comment'>
+    <%= render partial: 'comments/form', locals: { post: @post, comment: @comment } %>
   </div>
+</div>
